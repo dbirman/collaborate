@@ -1,0 +1,49 @@
+.tg  {
+	border-collapse:collapse;border-spacing:0;
+}
+.tg td{
+	width:1vw;
+	height:1vh;
+	font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;
+}
+.tg th{
+	min-width:1vw;
+	min-height:1vh;
+	font-family:Arial, sans-serif;
+	font-size:14px;font-weight:normal;
+	padding:10px 5px;border-style:none;
+	border-width:0px;overflow:hidden;
+	word-break:normal;
+	border-color:black;
+	text-align:right;
+}
+
+th.rotate {
+	max-width:1vw;
+  /* Something you can count on */
+  /*height: 10vh;
+  white-space: nowrap;*/
+}
+
+th.rotate > div {
+  transform: 
+    /* Magic Numbers */
+    /*translate(-1vw, 5vh)*/
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  /*width: 5vw;*/
+}
+th.rotate > div > span {
+  /*border-bottom: 1px solid #ccc;*/
+  /*padding: 5px 10px;*/
+}
+
+.tg .w {
+	background-color:#ffffff;
+}
+.tg .b {
+	background-color:#202020;
+} 
+.tg .g {
+	background-color:#808080;
+}
