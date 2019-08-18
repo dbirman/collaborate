@@ -1,41 +1,62 @@
+table {
+	width: 400px;
+	border-color:black;
+	word-break:normal;
+	font-family:Arial, sans-serif;
+	font-size:12pt;
+}
+
 .tg  {
 	border-collapse:collapse;border-spacing:0;
 }
 .tg td{
-	width:1vw;
-	height:1vh;
-	font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;
+	width:20px;
+	height:20px;
+	padding:2px 2px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
 }
 .tg th{
-	min-width:1vw;
-	min-height:1vh;
-	font-family:Arial, sans-serif;
-	font-size:14px;font-weight:normal;
-	padding:10px 5px;border-style:none;
-	border-width:0px;overflow:hidden;
-	word-break:normal;
-	border-color:black;
+	font-weight:normal;
+	padding:2px 2px;
+	border-style:none;
+	border-width:0px;
 	text-align:right;
 }
 
+.row-header {
+	height:20px;
+}
+
 th.rotate {
-	max-width:1vw;
-  /* Something you can count on */
-  /*height: 10vh;
-  white-space: nowrap;*/
+  white-space: nowrap;
+  text-align:left;
 }
 
 th.rotate > div {
-  transform: 
-    /* Magic Numbers */
-    /*translate(-1vw, 5vh)*/
-    /* 45 is really 360 - 45 */
-    rotate(315deg);
-  /*width: 5vw;*/
+  transform:
+  	translate(0px,8px)
+  	rotate(315deg);
+  width:10px;
 }
 th.rotate > div > span {
   /*border-bottom: 1px solid #ccc;*/
-  /*padding: 5px 10px;*/
+  padding: 5px 10px;
+}
+
+@media only screen and (min-width:768px) {
+	table {
+		width: 600px;
+		font-size:15pt;
+	}
+	.tg td {
+		width:30px;
+		height:30px;
+	}
+	.row-header {
+		height:30px;
+	}
 }
 
 .tg .w {
@@ -46,4 +67,10 @@ th.rotate > div > span {
 } 
 .tg .g {
 	background-color:#808080;
+}
+
+
+.rawtext {
+	width:100%;
+	min-height:25%;
 }
