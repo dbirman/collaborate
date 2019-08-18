@@ -11,7 +11,7 @@ function chgBkg(cell) {
 
 function generateHTML() {
 	// Generate the inner html 
-	var temp = "<p>" + document.getElementById("table").innerHTML + "</p>";
+	var temp = document.getElementById("table").innerHTML;
 	var temp = temp.replace(/ onclick.*>/g,">");
 	var temp = temp.replace("style.css","http://collaborate.danbirman.com/style.css")
 	document.getElementById("raw").innerHTML = temp;

@@ -53,6 +53,7 @@ th.rotate > div > span {
 	.tg td {
 		width:30px;
 		height:30px;
+		border-width: 2px;
 	}
 	.row-header {
 		height:30px;
@@ -63,10 +64,10 @@ th.rotate > div > span {
 	background-color:#ffffff;
 }
 .tg .b {
-	background-color:#202020;
+	background-color:#505050;
 } 
 .tg .g {
-	background-color:#808080;
+	background-color:#D3D3D3;
 }
 
 
