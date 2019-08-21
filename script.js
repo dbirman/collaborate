@@ -17,4 +17,10 @@ function generateHTML() {
 	document.getElementById("raw").innerHTML = temp;
 }
 
+function copy() {
+  let textarea = document.getElementById("raw");
+  textarea.select();
+  document.execCommand("copy");
+}
+
 window.onload = generateHTML;
